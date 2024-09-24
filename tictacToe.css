@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./Background_Image.png");
+    background-position: center;
+    background-size: cover;
+}
+.navigationBar{
+    /* background-color: black; */
+    width: 100%;
+    height: 20vh;
+    color: rgb(12, 12, 12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+}
+
+.before_match{
+    border: 2px solid rgb(12, 11, 11);
+    background-image: url("./start.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100px;
+    /* left: 30px; */
+    /* opacity: 0.8; */
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.beforeInfo{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ padding: 50px ;
+}
+
+.beforeH1{
+    padding: 30px 0px;
+}
+
+.beforeH2{
+    border: 1px solid rgb(13, 12, 14);
+    border-radius: 20px;
+    padding: 20px 20px;
+   
+}
+
+.beforeRadio{
+padding: 20px 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+tr,td{
+   text-align: center;
+   padding: 10px 0px;
+   cursor: pointer;
+   font-size: 1.4rem;
+}
+.fRadio{
+cursor: pointer;
+}
+
+.sRadio{
+    cursor: pointer;
+    }
+
+#submitBTN{
+    border: 1px solid rgb(228, 138, 138);
+    padding: 10px 40px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.beforeClass{
+
+    padding: 30px 20px;
+   
+}
+
+.unorderedList{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.HeadingOFGame{
+    color: black;
+}
+#reset {
+    background-color: rgb(231, 231, 167);
+    margin: 5vh 0 3vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.gameContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+}
+
+.container{
+    font-weight: 60%;
+    margin: 7vh 0;
+    display: grid;
+    grid-template-rows: repeat(3,22vw);
+    grid-template-columns: repeat(3,22vw);
+}
+
+.info{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.box{
+    border: 4px solid rgb(24, 22, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vw;
+    cursor: pointer;
+}
+.bt{
+    border-top: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+
+.bl{
+    border-left: 0;
+}
+
+.br{
+    border-right: 0;
+}
+
+.boxtext {
+    font-size: 3.5rem;
+}
+
+.gameInfo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3vh;
+  font-size: 2.5rem;
+}
+
+.foot{
+    /* background-color: black; */
+    color: white;
+    width: 100%;
+    height: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 0px;
+    opacity: 0.5;
+}
+
+.socialLogo{
+    font-style: none;
+}
+
+.logo{
+    padding: 0px 30px;
+    font-size: 30px;
+    font-style: none;
+
+}
+
+.showlove{
+    padding: 20px 0px;
+    color:crimson;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media Query */ 
+
+@media(min-width : 675px){
+    .gameContainer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gameInfo{
+        padding: 0px 130px;
+    }
+
+    .info{
+        font-size: 4.5rem;
+        font-weight: bold;
+    }
+    .container{
+        grid-template-rows: repeat(3,10vw);
+        grid-template-columns: repeat(3,15vw);
+    }
+    .boxtext {
+        font-size: 5.5rem;
+    }
+}

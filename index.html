@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./tictacToe.css" />
+    <link rel="icon" href="./logo.png" type="image/png" />
+    <script src="./ticTacToe.js" defer></script>
+  </head>
+  <body>
+    <nav class="navigationBar">
+      <ul class="unorderedList">
+        <li class="HeadingOFGame">TIC TAC TOE TWO PLAYER ONLINE GAME</li>
+        <li><button id="reset">Play Again</button></li>
+      </ul>
+    </nav>
+    <div class="gameContainer">
+      <div class="gameInfo">
+        <p class="info"></p>
+      </div>
+      <div class="container">
+        <div class="box bt bl"><span class="boxtext"></span></div>
+        <div class="box bt"><span class="boxtext"></span></div>
+        <div class="box bt br"><span class="boxtext"></span></div>
+        <div class="box bl"><span class="boxtext"></span></div>
+        <div class="box"><span class="boxtext"></span></div>
+        <div class="box br"><span class="boxtext"></span></div>
+        <div class="box bb bl"><span class="boxtext"></span></div>
+        <div class="box bb"><span class="boxtext"></span></div>
+        <div class="box bb br"><span class="boxtext"></span></div>
+      </div>
+    </div>
+    <footer class="foot">
+      <div class="mainfoot">This Game is Developed by Rishikesh Pandey</div>
+    </footer>
+    <div class="before_match">
+      <div class="beforeInfo">
+        <h1 class="beforeH1">Select First Turn</h1>
+        <h1 class="beforeH2">X Or O</h1>
+        <div class="beforeRadio">
+          <table class="beforeClass">
+            <tr>
+              <td>Choose X :</td>
+              <td>
+                <input type="radio" name="radio1" value="X" class="fRadio" />
+              </td>
+            </tr>
+            <tr>
+              <td>Choose O :</td>
+              <td>
+                <input type="radio" name="radio1" value="O" class="sRadio" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button id="submitBTN">Let's Play</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="socialLogo">
+          <span class="logo"
+            ><a href="https://www.instagram.com/therex_19/"
+              ><i class="fa-brands fa-instagram"></i></a
+          ></span>
+          <span class="logo" id="linked"
+            ><a
+              href="https://www.linkedin.com/in/%F0%9D%93%A1%F0%9D%93%B2%F0%9D%93%BC%F0%9D%93%B1%F0%9D%93%B2-%F0%9D%93%B4%F0%9D%93%AE%F0%9D%93%BC%F0%9D%93%B1-%F0%9D%93%9F%F0%9D%93%AA%F0%9D%93%B7%F0%9D%93%AD%F0%9D%93%AE%F0%9D%94%82-49400222a/"
+              ><i class="fa-brands fa-linkedin"></i></a
+          ></span>
+          <span class="logo"
+            ><a href="https://www.facebook.com/rishi.pandey.319452"
+              ><i class="fa-brands fa-facebook"></i></a
+          ></span>
+          <span class="logo" id="heart"
+            ><i class="fa-regular fa-heart" style="color: #1f2b51"></i
+          ></span>
+          <p class="showlove"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
